@@ -1,17 +1,21 @@
-# pysystemtrade
+# mysystemtrade
+ copy of pysystemtrade, shamefully to learn.
 
 Systematic Trading in python
 
-Rob Carver
+Copied from Rob Carver
+Thanks a million to Rob Carver, hope I can learn and add my own.
 
 [https://qoppac.blogspot.com/p/pysystemtrade.html](https://qoppac.blogspot.com/p/pysystemtrade.html)
 
 
 Version 0.85.0
+Version 0.86.0
  
 **WARNING! FROM VERSION 0.80 TO 0.85.0 IS A MAJOR UPGRADE. SEE [pandas_upgrade](pandas_upgrade.md) BEFORE DOING ANYTHING!
 
 20210305
+20210405
 
 
 
