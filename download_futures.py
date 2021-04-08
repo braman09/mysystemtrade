@@ -3,6 +3,7 @@ import pandas as pd
 #import urllib2
 #from urllib.request import urlopen
 import quandl
+import quandlkey
 import requests
 import matplotlib as plt
 
@@ -46,7 +47,7 @@ if __name__ == "__main__":
     symbol = 'ES'
     dl_dir = 'quandl/futures/ES' # make sure you've created this relative directory
                                  # beforehand
-    auth_token = ''
+    auth_token = quandlkey.KEY
     start_year = 2010
     end_year = 2020
 

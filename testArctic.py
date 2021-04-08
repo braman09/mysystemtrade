@@ -1,5 +1,7 @@
 from arctic import Arctic
+
 import quandl
+import quandlkey
 '''
 # Connect to local MONGODB
 store = Arctic('localhost')
@@ -8,7 +10,7 @@ store.initialize_library('NASDAQ')
 # Access the library
 library = store['NASDAQ']
 # load some data - maybe from Quandl
-aapl = quandl.get("WIKI/AAPL", authtoken="")
+aapl = quandl.get("WIKI/AAPL", authtoken=quandlkey.KEY)
 # store the data in the library
 library.write('AAPL',aapl,metadata={'source':'Quandl'})
 # reading the data

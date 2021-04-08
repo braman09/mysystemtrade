@@ -1,5 +1,6 @@
 import pandas as pd
 import quandl
+import quandlkey
 import matplotlib.pyplot as plt
 import mplfinance as mpf
 from datetime import date
@@ -12,13 +13,13 @@ store.initialize_library('Futures')
 # access the library
 library = store['Futures']
 
-es1 = quandl.get("CHRIS/CME_ES1", authtoken="",
+es1 = quandl.get("CHRIS/CME_ES1", authtoken=quandlkey.KEY,
                 start_date="2010-01-01",end_date=date.today())
-es2 = quandl.get("CHRIS/CME_ES2", authtoken="",
+es2 = quandl.get("CHRIS/CME_ES2", authtoken=quandlkey.KEY,
                 start_date="2010-01-01",end_date=date.today())
-es3 = quandl.get("CHRIS/CME_ES3", authtoken="",
+es3 = quandl.get("CHRIS/CME_ES3", authtoken=quandlkey.KEY,
                 start_date="2010-01-01",end_date=date.today())
-es4 = quandl.get("CHRIS/CME_ES4", authtoken="",
+es4 = quandl.get("CHRIS/CME_ES4", authtoken=quandlkey.KEY,
                 start_date="2010-01-01",end_date=date.today())
 es1.index.name = es2.index.name = es3.index.name = es4.index.name = 'Date'
 

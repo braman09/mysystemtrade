@@ -1,5 +1,6 @@
 import pandas as pd
 import quandl
+import quandlkey
 import matplotlib.pyplot as plt
 import mplfinance as mpf
 from datetime import date
@@ -23,9 +24,9 @@ es4.to_csv('./quandl/futures/ES/es4.csv')
 
 # NQ contracts
 
-nq1 = quandl.get("CHRIS/CME_NQ1", authtoken="",
+nq1 = quandl.get("CHRIS/CME_NQ1", authtoken=quandlkey.KEY,
                 start_date="2010-01-01",end_date=date.today())
-nq2 = quandl.get("CHRIS/CME_NQ2", authtoken="",
+nq2 = quandl.get("CHRIS/CME_NQ2", authtoken=quandlkey.KEY,
                 start_date="2010-01-01",end_date=date.today())
 nq1.index.name = nq2.index.name = 'Date'
 
